@@ -1,0 +1,56 @@
+/* General CSS */
+
+body
+{
+    background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container
+{
+    width: 900px;
+    margin: auto;
+}
+
+h1
+{
+    font-style: bold;
+    font-size: 1.2em;
+}
+
+h2
+{
+    font-style: bold;
+    font-size: 0.9em;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Header */
+
+header ul
+{
+    display: flex;  
+    float: right;
+    padding: 60px 0px 0px 0px;  
+}
+
+header li
+{
+    margin-left: 50px; 
+    text-align: right;
+}
+
+header img
+{
+    padding: 45px 0px 0px 0px;
+}
+header
+{
+    border:3px solid black;
+}
