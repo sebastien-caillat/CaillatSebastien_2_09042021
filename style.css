@@ -12,6 +12,11 @@ body
     margin: auto;
 }
 
+#section-hosting, #section-hosting-most_popular, footer
+{
+    background-color: #F2F2F2;
+}
+
 h1
 {
     font-style: bold;
@@ -31,7 +36,17 @@ ul
     list-style-type: none;
 }
 
+.fas
+{
+    color: #0065FC;
+}
+
 /* Header */
+
+header
+{
+    margin-bottom: 40px;
+}
 
 header ul
 {
@@ -46,11 +61,27 @@ header li
     text-align: right;
 }
 
+header a
+{
+    text-decoration: none;
+    color: black;
+}
+
+header strong
+{
+    font-weight: bold;
+    color: #0065FC;
+    margin-right: 4px;
+}
+
 header img
 {
     padding: 45px 0px 0px 0px;
 }
-header
+
+a:hover
 {
-    border:3px solid black;
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 60px;
 }
