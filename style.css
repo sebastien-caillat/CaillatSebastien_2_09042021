@@ -8,7 +8,7 @@ body
 
 .container
 {
-    width: 900px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -26,7 +26,7 @@ h1
 h2
 {
     font-style: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 ul
@@ -34,6 +34,11 @@ ul
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+p
+{
+    font-size: 0,3em;
 }
 
 .fas
@@ -83,5 +88,66 @@ a:hover
 {
     color: #0065FC;
     border-top: 1px solid #0065FC;
-    padding-top: 60px;
+    padding: 60px 20px 0px 20px;
+}
+
+/* Section 1 - Research */
+
+#section-research
+{
+    border: 4px solid black;
+}
+
+.fa-map-marker-alt
+{
+    display: flex;
+    float: left;
+    margin: 0px 15px 0px 5px;
+    padding-top: 10px;
+    padding-left: 17px;
+    color: black;
+    
+}
+
+input
+{
+ width: 250px;
+ height: 40px;
+}
+
+.send-research
+{
+    width: 150px;
+}
+
+.filters
+{
+    display:flex;
+    align-items: baseline;
+    font-weight: bold;
+}
+
+.filters i
+{
+display: flex;
+float: left;
+padding-right: 10px;
+}
+
+.filters-button
+{
+    display: flex;
+    align-items: baseline;
+    margin: 0px 40px 0px 40px;
+}
+
+.tooltip-block
+{
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-info-circle
+{
+    margin-right: 10px;
 }
