@@ -93,32 +93,47 @@ a:hover
 
 /* Section 1 - Research */
 
-#section-research
-{
-    border: 4px solid black;
-}
+    /* Search Button */
 
 .fa-map-marker-alt
 {
     display: flex;
     float: left;
-    margin: 0px 15px 0px 5px;
-    padding-top: 10px;
-    padding-left: 17px;
+    padding: 17px 15px 16px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     color: black;
-    
+    background-color: #F2F2F2;
 }
 
 input
 {
- width: 250px;
- height: 40px;
+ width: 200px;
+ height: 48px;
+}
+
+.research 
+{
+    border-color: #F2F2F2;
+    border: 1px solid #F2F2F2
 }
 
 .send-research
 {
-    width: 150px;
+    width: 130px;
+    height: 47px;
+    position: relative;
+    right: 5px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    font-size: 0.9em
 }
+
+    /* Filters */
 
 .filters
 {
@@ -131,15 +146,36 @@ input
 {
 display: flex;
 float: left;
-padding-right: 10px;
+padding: 15px;
+border: 1px solid #DEEBFF;
+background-color: #DEEBFF;
+border-radius: 30px;
+z-index: 1;
+position: relative;
+left: 17px;
 }
 
 .filters-button
 {
     display: flex;
     align-items: baseline;
-    margin: 0px 40px 0px 40px;
+    margin: 0px 7px 0px 7px;
+    padding-top: 20px;
 }
+
+.filters p
+{
+    padding: 12px;
+    padding-left: 30px;
+    border-top: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+}
+
+    /* Info Circle */
 
 .tooltip-block
 {
@@ -150,4 +186,7 @@ padding-right: 10px;
 .fa-info-circle
 {
     margin-right: 10px;
+    color: #FFFFFF;
+    background-color: #0065FC;
+    border-radius: 50%;
 }
