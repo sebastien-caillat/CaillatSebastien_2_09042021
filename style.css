@@ -274,6 +274,12 @@ input
     line-height: 0.6em;
 }
 
+#section-hosting a
+{
+    text-decoration: none;
+    border: none;
+    color: black;
+}
 .host-line-1
 {
     display: flex;
@@ -314,11 +320,8 @@ input
     border-radius: 20px;
     height: 140px;
     width: 300px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
-    margin-left: 25px;
+    padding: 5px 0px 5px 5px;
+    margin: 10px 0px 25px 25px;
 }
 
 .most_popular img
@@ -341,3 +344,62 @@ input
     position: relative;
     bottom: 10px;
 }
+
+/* Section 3 - Activities */
+
+#section-activities
+{
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.big-windows-activities
+{
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.big-windows-activities img
+{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.medium-windows-activities
+{
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.medium-windows-activities img
+{
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.small-windows-activities
+{
+    width: 300px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.small-windows-activities img
+{
+    width: 300px;
+    height: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.all-activities h2
+{
+    padding-left: 20px;
+}
+
