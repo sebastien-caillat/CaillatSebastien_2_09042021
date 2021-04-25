@@ -350,56 +350,57 @@ input
 #section-activities
 {
     margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .big-windows-activities
 {
-    width: 250px;
+    width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .big-windows-activities img
 {
-    width: 250px;
-    height: 350px;
+    width: 275px;
+    height: 385px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .medium-windows-activities
 {
-    width: 250px;
+    width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .medium-windows-activities img
 {
-    width: 250px;
-    height: 150px;
+    width: 275px;
+    height: 175px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .small-windows-activities
 {
-    width: 250px;
+    width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .small-windows-activities img
 {
-    width: 250px;
-    height: 100px;
+    width: 275px;
+    height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .all-activities h2
 {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .activities-1, .activities-2, .activities-3, .activities-4
@@ -410,20 +411,36 @@ input
 
 .big-windows-activities
 {
-    margin-right: 50px;
+    margin-right: 24px;
 }
 
 .activities-3
 {
-    margin-left: 65px;
+    margin-left: 30px;
 }
 
 .activities-2 .small-windows-activities
 {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .activities-4 .medium-windows-activities
 {
-    margin-top: 50px;
+    margin-top: 40px;
+}
+
+/* Footer */
+
+footer
+{
+    width: 1300px;
+    height: 200px;
+    margin:auto;
+}
+
+.footer-infos
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
