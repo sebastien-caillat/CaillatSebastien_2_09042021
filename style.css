@@ -349,51 +349,50 @@ input
 
 #section-activities
 {
-    border: 2px solid black;
     margin-top: 40px;
 }
 
 .big-windows-activities
 {
-    width: 300px;
+    width: 250px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .big-windows-activities img
 {
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .medium-windows-activities
 {
-    width: 300px;
+    width: 250px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .medium-windows-activities img
 {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .small-windows-activities
 {
-    width: 300px;
+    width: 250px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
 .small-windows-activities img
 {
-    width: 300px;
-    height: 130px;
+    width: 250px;
+    height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -403,3 +402,28 @@ input
     padding-left: 20px;
 }
 
+.activities-1, .activities-2, .activities-3, .activities-4
+{
+    display: inline-block;
+    flex-direction: column;
+}
+
+.big-windows-activities
+{
+    margin-right: 50px;
+}
+
+.activities-3
+{
+    margin-left: 65px;
+}
+
+.activities-2 .small-windows-activities
+{
+    margin-top: 50px;
+}
+
+.activities-4 .medium-windows-activities
+{
+    margin-top: 50px;
+}
