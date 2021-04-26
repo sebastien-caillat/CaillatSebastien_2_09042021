@@ -19,13 +19,13 @@ body
 
 h1
 {
-    font-style: bold;
+    font-weight: bold;
     font-size: 1.3em;
 }
 
 h2
 {
-    font-style: bold;
+    font-weight: bold;
     font-size: 1em;
 }
 
@@ -34,11 +34,6 @@ ul
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
-
-p
-{
-    font-size: 0,3em;
 }
 
 .fas
