@@ -441,6 +441,14 @@ footer
 .footer-infos
 {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-right: 350px;
+    padding-left: 50px;
+}
+
+footer li
+{
+    padding-bottom: 10px;
 }
