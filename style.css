@@ -110,6 +110,8 @@ input
 {
  width: 200px;
  height: 48px;
+ font-weight: bold;
+ padding-left: 15px;
 }
 
 .research 
@@ -202,12 +204,17 @@ input
     align-items: baseline;
 }
 
-.fa-info-circle
+.fa-info
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
     margin-right: 10px;
-    color: #FFFFFF;
-    background-color: #0065FC;
-    border-radius: 50%;
 }
 
 /* Section 2 - Hosting */
@@ -346,6 +353,13 @@ input
 {
     margin-top: 40px;
     margin-bottom: 50px;
+}
+
+#section-activities a
+{
+    text-decoration: none;
+    border: none;
+    color: black;
 }
 
 .big-windows-activities
