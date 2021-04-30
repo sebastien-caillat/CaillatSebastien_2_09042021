@@ -84,11 +84,18 @@ header img
     padding: 45px 0px 0px 0px;
 }
 
-a:hover
+header a:hover
 {
     color: #0065FC;
-    border-top: 1px solid #0065FC;
+    border-top: 1px solid #0065FC; 
     padding: 60px 20px 0px 20px;
+}
+
+    /* Mobile Responsive Header */
+
+@media all and (max-device-width: 480px)
+{
+   
 }
 
 /* Section 1 - Research */
@@ -111,6 +118,7 @@ input
  width: 200px;
  height: 48px;
  font-weight: bold;
+ font-size: 0.9em;
  padding-left: 15px;
 }
 
@@ -204,17 +212,21 @@ input
     align-items: baseline;
 }
 
+.tooltip
+{
+    margin-right: 15px; 
+    border: 2px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    width: 10px;
+    height: 10px;
+}
+
 .fa-info
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #f2f2f2;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    color: #0065FC;
-    margin-right: 10px;
+    padding-left: 2px;
 }
 
 /* Section 2 - Hosting */
