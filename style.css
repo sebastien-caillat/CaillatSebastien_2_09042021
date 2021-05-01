@@ -46,6 +46,13 @@ ul
     color: #F2F2F2;
 }
 
+@media all and (max-device-width: 480px)
+{
+    .container
+    {
+        max-width: 480px;
+    }
+}
 /* Header */
 
 header
@@ -95,7 +102,17 @@ header a:hover
 
 @media all and (max-device-width: 480px)
 {
-   
+   .sub-mobile
+   {
+    font-weight: bold;
+    position: relative;
+    bottom: 90px;
+   }
+
+   header  
+   {
+       margin-bottom: 40px;
+   }
 }
 
 /* Section 1 - Research */
@@ -227,6 +244,16 @@ input
 .fa-info
 {
     padding-left: 2px;
+}
+
+    /* Section 1 Responsive Mobile */
+
+@media all and (max-device-width: 480px)
+{
+    #section-research h1
+    {
+        padding-top: 80px;
+    }
 }
 
 /* Section 2 - Hosting */
