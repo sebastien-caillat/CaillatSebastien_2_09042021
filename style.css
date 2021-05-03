@@ -133,6 +133,12 @@ header a:hover
     border-bottom: 7px solid #F2F2F2;
     padding-bottom: 15px;
    }
+
+   header a:hover 
+   {
+       padding: 0px;
+       border-top: none;
+   }
 }
 
 /* Section 1 - Research */
@@ -178,6 +184,19 @@ input
     border-bottom-right-radius: 10px;
     font-weight: bold;
     font-size: 0.9em
+}
+
+    /* Section Research Mobile Responsive */
+
+@media all and (max-device-width: 480px)
+{
+    .send-research
+    {
+        width: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        right: 15px;
+    }
 }
 
     /* Filters */
@@ -242,54 +261,54 @@ input
 }
 
     /* Filters Mobile Responsive */
-
+    
 @media all and (max-device-width: 480px)
-{
+    {
     .filters
     {
         flex-direction: column;
         position: relative;
-        right: 30px;
+        right: 65px;
     }
-
+    
     .filters :nth-child(3)
     {
         align-self: flex-end;
         position: relative;
-        left: 40px;
+        left: 70px;
         bottom: 78px;
     }
-
+    
     .filters :nth-child(4)
     {
         position: relative;
         bottom: 100px;
     }
-
+    
     .filters :nth-child(5)
     {
         position: relative;
         bottom: 120px;
     }
-
+    
     .filters h2 
     {
         padding-left: 40px;
         position: relative;
-        left: 0.1%;
+        top: 10px;
+        right: 10px;
     }
-
+    
     .filters-button
     {
         padding: 0px;
     }
-
+    
     .tooltip-block
     {
         position: relative;
         bottom: 110px;
     }
-
 }
 
     /* Info Circle */
