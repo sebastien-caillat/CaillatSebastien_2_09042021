@@ -567,6 +567,63 @@ input
     margin-top: 40px;
 }
 
+    /* Section Activities Mobile Responsive */
+
+@media all and (max-device-width: 480px)
+{
+    .big-windows-activities
+    {
+        width: 320px;
+    }
+
+    .big-windows-activities img 
+    {
+        width: 320px;
+        height: 120px;
+    }
+
+    .medium-windows-activities
+    {
+        width: 320px;
+    }
+
+    .medium-windows-activities img 
+    {
+        width: 320px;
+        height: 120px;
+    }
+
+    .small-windows-activities
+    {
+        width: 320px;
+    }
+
+    .small-windows-activities img
+    {
+        width: 320px;
+    }
+
+    .activities-1
+    {
+        margin-bottom: 20px;
+    }
+
+    .activities-2
+    {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .activities-3
+    {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .activities-4
+    {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
 /* Footer */
 
 footer
@@ -589,4 +646,27 @@ footer
 footer li
 {
     padding-bottom: 10px;
+}
+
+    /* Footer Mobile Responsive */
+
+@media all and (max-device-width: 480px)
+{
+    footer 
+    {
+    width: 480px;
+    height: 500px;
+    max-width: 480px;
+    }
+
+    .footer-infos
+    {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    footer ul
+    {
+        margin-bottom: 30px;
+    }
 }
