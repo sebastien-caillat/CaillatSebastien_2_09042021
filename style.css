@@ -358,6 +358,36 @@ input
     padding-top: 20px;
 }
 
+    /* Section Hosting Mobile Responsive */
+
+@media all and (max-device-width: 480px)
+{
+    #section-hosting
+    {
+        flex-direction: column-reverse;
+    }
+
+    #section-hosting-most_popular
+    {
+        margin-bottom: 50px;
+    }
+
+    #section-hosting-marseille
+    {
+        background-color: #FFFFFF;
+    }
+
+    .host-line-1
+    {
+        flex-direction: column;
+    }
+
+    .host-line-2
+    {
+        flex-direction: column;
+    }
+}
+
     /* Hosting Marseille */
 
 #section-hosting-marseille
@@ -476,11 +506,13 @@ input
     bottom: 10px;
 }
 
+
+
 /* Section 3 - Activities */
 
 #section-activities
 {
-    margin-top: 40px;
+    margin-top: 950px;
     margin-bottom: 50px;
 }
 
@@ -573,34 +605,34 @@ input
 {
     .big-windows-activities
     {
-        width: 320px;
+        width: 340px;
     }
 
     .big-windows-activities img 
     {
-        width: 320px;
+        width: 340px;
         height: 120px;
     }
 
     .medium-windows-activities
     {
-        width: 320px;
+        width: 340px;
     }
 
     .medium-windows-activities img 
     {
-        width: 320px;
+        width: 340px;
         height: 120px;
     }
 
     .small-windows-activities
     {
-        width: 320px;
+        width: 340px;
     }
 
     .small-windows-activities img
     {
-        width: 320px;
+        width: 340px;
     }
 
     .activities-1
