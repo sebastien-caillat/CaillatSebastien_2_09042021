@@ -186,6 +186,11 @@ input
     font-size: 0.9em
 }
 
+.fa-search
+{
+    visibility: hidden;
+}
+
     /* Section Research Mobile Responsive */
 
 @media all and (max-device-width: 480px)
@@ -196,6 +201,22 @@ input
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         right: 15px;
+    }
+
+    .send-research
+    {
+        font-size: 0;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .fa-search
+    {
+        visibility: visible;
+        color: #FFFFFF;
+        position: relative;
+        right: 52px;
+
     }
 }
 
@@ -268,14 +289,14 @@ input
     {
         flex-direction: column;
         position: relative;
-        right: 65px;
+        right: 30px;
     }
     
     .filters :nth-child(3)
     {
         align-self: flex-end;
         position: relative;
-        left: 70px;
+        left: 60px;
         bottom: 78px;
     }
     
@@ -358,36 +379,6 @@ input
     padding-top: 20px;
 }
 
-    /* Section Hosting Mobile Responsive */
-
-@media all and (max-device-width: 480px)
-{
-    #section-hosting
-    {
-        flex-direction: column-reverse;
-    }
-
-    #section-hosting-most_popular
-    {
-        margin-bottom: 50px;
-    }
-
-    #section-hosting-marseille
-    {
-        background-color: #FFFFFF;
-    }
-
-    .host-line-1
-    {
-        flex-direction: column;
-    }
-
-    .host-line-2
-    {
-        flex-direction: column;
-    }
-}
-
     /* Hosting Marseille */
 
 #section-hosting-marseille
@@ -460,7 +451,7 @@ input
     border-radius: 20px;
     width: 30%;
     height: 650px;
-    width: 370px;
+    width: 420px;
 }
 
 .title-most_popular
@@ -506,13 +497,86 @@ input
     bottom: 10px;
 }
 
+    /* Section Hosting Mobile Responsive */
 
+@media all and (max-device-width: 480px)
+{
+    #section-hosting
+    {
+        flex-direction: column-reverse;
+    }
+    
+    #section-hosting-most_popular
+    {
+        margin-bottom: 0px;
+        position: relative;
+        right: 47px;
+        bottom: 100px;
+        border-radius: 0px;
+    }
+
+    #section-hosting-most_popular h1 
+    {
+        position:relative;
+        right: 30px;
+    }
+    
+    #section-hosting-marseille
+    {
+        background-color: #FFFFFF;
+        position: relative;
+        bottom: 100px;
+    }
+    
+    .host-line-1
+    {
+        flex-direction: column;
+    }
+    
+    .host-line-2
+    {
+        flex-direction: column;
+    }
+    
+    .most_popular
+    {
+        width: 370px;
+        position: relative;
+        right: 15px;
+    }
+
+    #section-hosting-marseille h1
+    {
+        position: relative;
+        right: 30px;
+        padding-left: 0px;
+    }
+
+    .hosting
+    {
+        width: 370px;
+        position: relative;
+        right: 45px;
+        margin: 7px;
+    }
+
+    .hosting img 
+    {
+        width: 370px;
+    }
+
+    .read-more
+    {
+        position: relative;
+        right: 50px;
+    }
+}
 
 /* Section 3 - Activities */
 
 #section-activities
 {
-    margin-top: 950px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -603,36 +667,55 @@ input
 
 @media all and (max-device-width: 480px)
 {
+    #section-activities
+    {
+        margin-top: 950px;
+        position: relative;
+        bottom: 200px;
+    }
+
+    #section-activities h1 
+    {
+        position: relative;
+        right: 30px;
+    }
+
     .big-windows-activities
     {
-        width: 340px;
+        width: 370px;
+        position:relative;
+        right: 30px;
     }
 
     .big-windows-activities img 
     {
-        width: 340px;
+        width: 370px;
         height: 120px;
     }
 
     .medium-windows-activities
     {
-        width: 340px;
+        width: 370px;
+        position:relative;
+        right: 30px;
     }
 
     .medium-windows-activities img 
     {
-        width: 340px;
+        width: 370px;
         height: 120px;
     }
 
     .small-windows-activities
     {
-        width: 340px;
+        width: 370px;
+        position: relative;
+        right: 30px;
     }
 
     .small-windows-activities img
     {
-        width: 340px;
+        width: 370px;
     }
 
     .activities-1
