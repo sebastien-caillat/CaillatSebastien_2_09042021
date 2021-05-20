@@ -46,7 +46,7 @@ ul
     color: #F2F2F2;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     .container
     {
@@ -99,9 +99,20 @@ header a:hover
     padding: 60px 20px 0px 20px;
 }
 
+    /* Tablet Responsive Header */
+
+@media all and (max-width: 768px)
+{
+    header ul 
+    {
+        position: relative;
+        right: 450px;
+    }
+}
+
     /* Mobile Responsive Header */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
    .sub-mobile
    {
@@ -109,11 +120,6 @@ header a:hover
     justify-content: flex-end;
     position: relative;
     bottom: 90px;
-   }
-
-   header  
-   {
-       margin-bottom: 40px;
    }
 
    .hos 
@@ -124,20 +130,26 @@ header a:hover
 
    .act
    {
-       position: relative;
+       position:relative;
        left: 90px;
    }
 
    .hos, .act
    {
-    border-bottom: 7px solid #F2F2F2;
+    border-bottom: 6px solid #F2F2F2;
     padding-bottom: 15px;
    }
 
-   header a:hover 
+   header a:hover
    {
-       padding: 0px;
+       border-color: #0065FC;
        border-top: none;
+       padding: 0px;
+   }
+
+   header .hos:hover, .act:hover
+   {
+       border-color: #0065FC;
    }
 }
 
@@ -193,21 +205,22 @@ input
 
     /* Section Research Mobile Responsive */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     .send-research
     {
         width: 50px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        right: 15px;
-    }
-
-    .send-research
-    {
+        right: 20px;
         font-size: 0;
         position: relative;
         bottom: 6px;
+    }
+
+    input 
+    {
+        width: 210px;
     }
 
     .fa-search
@@ -215,8 +228,8 @@ input
         visibility: visible;
         color: #FFFFFF;
         position: relative;
-        right: 52px;
-
+        left: 253px;
+        bottom: 37px;
     }
 }
 
@@ -227,6 +240,7 @@ input
     display:flex;
     align-items: baseline;
     font-weight: bold;
+    margin-top: -15px;
 }
 
 .filters h2
@@ -281,9 +295,48 @@ input
     font-style: italic;
 }
 
+    /* Filters Tablet Responsive*/
+
+@media all and (max-width: 768px)
+{
+    .filters
+    {
+        flex-direction: column;
+        position: relative;
+        right: 70px;
+    }
+
+    .filters h2 
+    {
+        position: relative;
+        left: 30px;
+        top: 30px;
+    }
+
+    .filters :nth-child(3)
+    {
+        margin-top: -15px;
+        position: relative;
+        left: 230px;
+    }
+
+    .filters :nth-child(4)
+    {
+        position: relative;
+        left: 200px;
+        bottom: 182px;
+    }
+
+    .filters :nth-child(5)
+    {
+        position: relative;
+        bottom: 200px;
+    }
+}
+
     /* Filters Mobile Responsive */
     
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
     {
     .filters
     {
@@ -296,7 +349,7 @@ input
     {
         align-self: flex-end;
         position: relative;
-        left: 60px;
+        left: 30px;
         bottom: 78px;
     }
     
@@ -325,11 +378,6 @@ input
         padding: 0px;
     }
     
-    .tooltip-block
-    {
-        position: relative;
-        bottom: 110px;
-    }
 }
 
     /* Info Circle */
@@ -338,6 +386,8 @@ input
 {
     display: flex;
     align-items: baseline;
+    position: relative;
+    bottom: 110px;
 }
 
 .tooltip
@@ -357,13 +407,41 @@ input
     padding-left: 2px;
 }
 
+    /* Section 1 Responsive Tablet */
+
+@media all and (max-width: 768px)
+{
+    .tooltip-block
+    {
+        position: relative;
+        top: 0px;
+        margin-top: -190px;
+    }
+}
+
     /* Section 1 Responsive Mobile */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     #section-research h1
     {
         padding-top: 80px;
+    }
+
+    .tooltip-block
+    {
+        white-space: nowrap;
+    }
+
+    .tooltip-block p 
+    {
+        position: relative;
+        right: 5px;
+    }
+
+    .mobile-wrap
+    {
+        display: block;
     }
 }
 
@@ -418,6 +496,7 @@ input
     padding: 5px;
     margin: 15px;
     justify-content: space-around;
+    box-shadow: 2px 4px 2px #DFDBDB;
 }
 
 .hosting h2, .hosting p, .hosting .rating
@@ -452,6 +531,7 @@ input
     width: 30%;
     height: 650px;
     width: 420px;
+    margin-top: -40px;
 }
 
 .title-most_popular
@@ -471,9 +551,10 @@ input
     background-color: #FFFFFF;
     border-radius: 20px;
     height: 140px;
-    width: 300px;
+    width: 320px;
     padding: 5px 0px 5px 5px;
     margin: 10px 0px 25px 25px;
+    box-shadow: 2px 4px 2px #DFDBDB;
 }
 
 .most_popular img
@@ -499,7 +580,7 @@ input
 
     /* Section Hosting Mobile Responsive */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     #section-hosting
     {
@@ -511,21 +592,21 @@ input
         margin-bottom: 0px;
         position: relative;
         right: 47px;
-        bottom: 100px;
+        bottom: 50px;
         border-radius: 0px;
     }
 
     #section-hosting-most_popular h1 
     {
         position:relative;
-        right: 30px;
+        right: 15px;
     }
     
     #section-hosting-marseille
     {
         background-color: #FFFFFF;
         position: relative;
-        bottom: 100px;
+        bottom: 50px;
     }
     
     .host-line-1
@@ -540,35 +621,35 @@ input
     
     .most_popular
     {
-        width: 370px;
+        width: 340px;
         position: relative;
-        right: 15px;
+        left: 8px;
     }
 
     #section-hosting-marseille h1
     {
         position: relative;
         right: 30px;
-        padding-left: 0px;
+        white-space: nowrap;
     }
 
     .hosting
     {
-        width: 370px;
+        width: 330px;
         position: relative;
-        right: 45px;
+        right: 20px;
         margin: 7px;
     }
 
     .hosting img 
     {
-        width: 370px;
+        width: 330px;
     }
 
     .read-more
     {
         position: relative;
-        right: 50px;
+        right: 25px;
     }
 }
 
@@ -592,6 +673,7 @@ input
     width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
+    box-shadow: 2px 4px 2px #DFDBDB;
 }
 
 .big-windows-activities img
@@ -607,6 +689,7 @@ input
     width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
+    box-shadow: 2px 4px 2px #DFDBDB;
 }
 
 .medium-windows-activities img
@@ -622,6 +705,7 @@ input
     width: 275px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
+    box-shadow: 2px 4px 2px #DFDBDB;
 }
 
 .small-windows-activities img
@@ -665,57 +749,57 @@ input
 
     /* Section Activities Mobile Responsive */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     #section-activities
     {
-        margin-top: 950px;
+        margin-top: 920px;
         position: relative;
-        bottom: 200px;
+        bottom: 150px;
     }
 
     #section-activities h1 
     {
         position: relative;
-        right: 30px;
+        right: 10px;
     }
 
     .big-windows-activities
     {
-        width: 370px;
+        width: 330px;
         position:relative;
-        right: 30px;
+        right: 10px;
     }
 
     .big-windows-activities img 
     {
-        width: 370px;
+        width: 330px;
         height: 120px;
     }
 
     .medium-windows-activities
     {
-        width: 370px;
+        width: 330px;
         position:relative;
-        right: 30px;
+        right: 10px;
     }
 
     .medium-windows-activities img 
     {
-        width: 370px;
+        width: 330px;
         height: 120px;
     }
 
     .small-windows-activities
     {
-        width: 370px;
+        width: 330px;
         position: relative;
-        right: 30px;
+        right: 10px;
     }
 
     .small-windows-activities img
     {
-        width: 370px;
+        width: 330px;
     }
 
     .activities-1
@@ -765,19 +849,24 @@ footer li
 
     /* Footer Mobile Responsive */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     footer 
     {
     width: 480px;
     height: 500px;
     max-width: 480px;
+    position: relative;
+    right: 10px;
+    margin-top: -180px;
     }
 
     .footer-infos
     {
         flex-direction: column;
         padding-right: 0px;
+        position: relative;
+        right: 15px;
     }
 
     footer ul
