@@ -114,6 +114,11 @@ header a:hover
 
 @media all and (max-width: 480px)
 {
+    header ul
+    {
+        position: relative;
+        right: 0px;
+    }
    .sub-mobile
    {
     display: flex;
@@ -337,7 +342,7 @@ input
     /* Filters Mobile Responsive */
     
 @media all and (max-width: 480px)
-    {
+{
     .filters
     {
         flex-direction: column;
@@ -351,12 +356,14 @@ input
         position: relative;
         left: 30px;
         bottom: 78px;
+        margin-top: 0px;
     }
     
     .filters :nth-child(4)
     {
         position: relative;
         bottom: 100px;
+        left: 0px;
     }
     
     .filters :nth-child(5)
@@ -367,17 +374,17 @@ input
     
     .filters h2 
     {
-        padding-left: 40px;
+        padding-left: 30px;
         position: relative;
         top: 10px;
         right: 10px;
+        left: 0px;
     }
     
     .filters-button
     {
         padding: 0px;
-    }
-    
+    }   
 }
 
     /* Info Circle */
@@ -411,10 +418,14 @@ input
 
 @media all and (max-width: 768px)
 {
+    #section-research 
+    {
+        margin-bottom: -120px;
+    }
     .tooltip-block
     {
-        position: relative;
-        top: 0px;
+        position: absolute;
+        bottom: 490px;
         margin-top: -190px;
     }
 }
@@ -423,6 +434,11 @@ input
 
 @media all and (max-width: 480px)
 {
+    #section-research 
+    {
+        margin-bottom: 0px;
+    }
+
     #section-research h1
     {
         padding-top: 80px;
@@ -431,6 +447,9 @@ input
     .tooltip-block
     {
         white-space: nowrap;
+        margin-top: 0px;
+        position: relative;
+        bottom: 120px;
     }
 
     .tooltip-block p 
@@ -578,6 +597,26 @@ input
     bottom: 10px;
 }
 
+    /* Section Hosting Tablet Responsive */
+
+@media all and (max-width: 768px)
+{
+    #section-hosting
+    {
+        position: relative;
+        right: 18px;
+    }
+
+    #section-hosting-most_popular
+    {
+        position: relative;
+        top: 690px;
+        right: 820px;
+        margin-bottom: 1000px;
+    }
+
+}
+
     /* Section Hosting Mobile Responsive */
 
 @media all and (max-width: 480px)
@@ -589,10 +628,12 @@ input
     
     #section-hosting-most_popular
     {
-        margin-bottom: 0px;
+        margin-bottom: 50px;
+        margin-top: -110px;
         position: relative;
-        right: 47px;
-        bottom: 50px;
+        top: 0px;
+        right: 28px;
+        bottom: 60px;
         border-radius: 0px;
     }
 
@@ -629,7 +670,7 @@ input
     #section-hosting-marseille h1
     {
         position: relative;
-        right: 30px;
+        right: 16px;
         white-space: nowrap;
     }
 
@@ -637,7 +678,7 @@ input
     {
         width: 330px;
         position: relative;
-        right: 20px;
+        right: 4px;
         margin: 7px;
     }
 
@@ -845,6 +886,32 @@ footer
 footer li
 {
     padding-bottom: 10px;
+}
+
+    /* Footer Tablet Responsive */
+
+@media all and (max-width: 768px)
+{
+    footer 
+    {
+        position: relative;
+        right: 12px;
+    }
+
+    .footer-infos 
+    {
+        justify-content: flex-start;
+    }
+
+    .footer-infos :nth-child(1)
+    {
+        margin-right: 30px;
+    }
+
+    .footer-infos :nth-child(2)
+    {
+        margin-right: 30px;
+    }
 }
 
     /* Footer Mobile Responsive */
