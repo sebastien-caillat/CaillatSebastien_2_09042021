@@ -394,7 +394,7 @@ input
     display: flex;
     align-items: baseline;
     position: relative;
-    bottom: 110px;
+    bottom: 10px;
 }
 
 .tooltip
@@ -449,7 +449,7 @@ input
         white-space: nowrap;
         margin-top: 0px;
         position: relative;
-        bottom: 120px;
+        bottom: 120px; 
     }
 
     .tooltip-block p 
@@ -550,7 +550,6 @@ input
     width: 30%;
     height: 650px;
     width: 420px;
-    margin-top: -40px;
 }
 
 .title-most_popular
@@ -609,10 +608,40 @@ input
 
     #section-hosting-most_popular
     {
+        height: 470px;
         position: relative;
-        top: 690px;
+        top: 670px;
         right: 820px;
         margin-bottom: 1000px;
+        background-color: #FFFFFF;
+        flex-direction: row;
+    }
+
+    #section-hosting-most_popular h1 
+    {
+        position: relative;
+        left: 25px;
+        white-space: nowrap
+    }
+
+    .most_popular 
+    {
+        position: relative;
+        top: 100px;
+        right: 215px;
+        margin-top: -10px;
+    }
+
+    .fa-chart-line 
+    {
+        visibility: hidden;
+    }
+
+    .tab-move 
+    {
+        position: relative;
+        top: 280px;
+        right: 915px;
     }
 
 }
@@ -628,6 +657,8 @@ input
     
     #section-hosting-most_popular
     {
+        height: 620px;
+        flex-direction: column;
         margin-bottom: 50px;
         margin-top: -110px;
         position: relative;
@@ -635,12 +666,14 @@ input
         right: 28px;
         bottom: 60px;
         border-radius: 0px;
+        background-color: #F2F2F2;
     }
 
     #section-hosting-most_popular h1 
     {
         position:relative;
         right: 15px;
+        left: 0px;
     }
     
     #section-hosting-marseille
@@ -665,12 +698,15 @@ input
         width: 340px;
         position: relative;
         left: 8px;
+        top: 0px;
+        right: 0px;
+        margin-top: 0px;
     }
 
     #section-hosting-marseille h1
     {
         position: relative;
-        right: 16px;
+        right: 5px;
         white-space: nowrap;
     }
 
@@ -690,7 +726,12 @@ input
     .read-more
     {
         position: relative;
-        right: 25px;
+        right: 15px;
+    }
+
+    .fa-chart-line
+    {
+        visibility: visible;
     }
 }
 
@@ -788,6 +829,73 @@ input
     margin-top: 40px;
 }
 
+    /* Section Activities Tablet Responsive */
+
+@media all and (max-width: 768px)
+{
+    #section-activities 
+    {
+        margin-top: -350px;
+    }
+
+    .big-windows-activities
+    {
+        width: 240px;
+    }
+
+    .big-windows-activities img 
+    {
+        width: 240px;
+        height: 120px;
+        position: relative;
+    }
+
+    .medium-windows-activities
+    {
+        width: 240px;
+    }
+
+    .medium-windows-activities img 
+    {
+        width: 240px;
+        height: 120px;
+    }
+
+    .small-windows-activities 
+    {
+        width: 240px;
+    }
+
+    .small-windows-activities img 
+    {
+        width: 240px;
+    }
+
+    .activities-1
+    {
+        position: relative;
+        bottom: 210px;
+    }
+
+    .activities-2 
+    {
+        position: relative;
+        right: 15px;
+    }
+
+    .activities-3 
+    {
+        position: relative;
+        right: 545px;
+    }
+
+    .activities-4
+    {
+        position: relative;
+        right: 305px;
+    }
+}
+
     /* Section Activities Mobile Responsive */
 
 @media all and (max-width: 480px)
@@ -846,21 +954,25 @@ input
     .activities-1
     {
         margin-bottom: 20px;
+        bottom: 0px;
     }
 
     .activities-2
     {
         margin: 20px 0px 20px 0px;
+        right: 0px;
     }
 
     .activities-3
     {
         margin: 20px 0px 20px 0px;
+        right: 0px;
     }
 
     .activities-4
     {
         margin: 20px 0px 20px 0px;
+        right: 0px;
     }
 }
 
@@ -901,6 +1013,8 @@ footer li
     .footer-infos 
     {
         justify-content: flex-start;
+        position: relative;
+        right: 30px;
     }
 
     .footer-infos :nth-child(1)
