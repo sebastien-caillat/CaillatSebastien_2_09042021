@@ -72,6 +72,8 @@ header li
 {
     margin-left: 50px; 
     text-align: right;
+    position: relative;
+    right: 140px;
 }
 
 header a
@@ -99,6 +101,19 @@ header a:hover
     padding: 60px 20px 0px 20px;
 }
 
+.sub-mobile 
+{
+    position: relative;
+    left: 1110px;
+    bottom: 50px;
+}
+
+.sub-mobile a:hover
+{
+    border-top: none;
+    padding: 0px;
+}
+
     /* Tablet Responsive Header */
 
 @media all and (max-width: 768px)
@@ -106,7 +121,12 @@ header a:hover
     header ul 
     {
         position: relative;
-        right: 450px;
+        right: 430px;
+    }
+
+    .sub-mobile
+    {
+        left: 680px;
     }
 }
 
@@ -117,32 +137,37 @@ header a:hover
     header ul
     {
         position: relative;
-        right: 0px;
+        right: 120px;
     }
+
+    header li 
+    {
+        width: 100%;
+        border-bottom: 5px solid #F2F2F2;
+        padding-bottom: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
    .sub-mobile
    {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 90px;
+    bottom: 50px;
+    left: 290px;
    }
 
    .hos 
    {
         position: relative;
-        left: 40px;
+        left: 250px;
    }
 
    .act
    {
        position:relative;
-       left: 90px;
-   }
-
-   .hos, .act
-   {
-    border-bottom: 6px solid #F2F2F2;
-    padding-bottom: 15px;
+       left: 165px;
    }
 
    header a:hover
@@ -425,7 +450,7 @@ input
     .tooltip-block
     {
         position: absolute;
-        bottom: 490px;
+        bottom: 450px;
         margin-top: -190px;
     }
 }
@@ -552,6 +577,12 @@ input
     width: 420px;
 }
 
+#section-hosting-most_popular h1 
+{
+    position: relative;
+    right: 10px;
+}
+
 .title-most_popular
 {
     display: flex;
@@ -672,8 +703,7 @@ input
     #section-hosting-most_popular h1 
     {
         position:relative;
-        right: 15px;
-        left: 0px;
+        left: -10px;
     }
     
     #section-hosting-marseille
@@ -838,6 +868,12 @@ input
         margin-top: -350px;
     }
 
+    #section-activities h1 
+    {
+        position: relative;
+        left: 5px;
+    }
+
     .big-windows-activities
     {
         width: 240px;
@@ -911,6 +947,7 @@ input
     {
         position: relative;
         right: 10px;
+        left: 0px;
     }
 
     .big-windows-activities
@@ -1008,6 +1045,7 @@ footer li
     {
         position: relative;
         right: 12px;
+        height: 300px;
     }
 
     .footer-infos 
