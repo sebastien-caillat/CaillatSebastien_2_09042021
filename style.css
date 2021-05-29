@@ -284,7 +284,6 @@ input
     display: flex;
     float: left;
     padding: 15px;
-    border: 1px solid #DEEBFF;
     background-color: #DEEBFF;
     border-radius: 30px;
     z-index: 1;
