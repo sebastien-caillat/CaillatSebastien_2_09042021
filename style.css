@@ -4,6 +4,7 @@ body
 {
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 .container
@@ -54,6 +55,7 @@ ul
         max-width: 480px;
     }
 }
+
 /* Header */
 
 header
@@ -74,6 +76,7 @@ header li
     text-align: right;
     position: relative;
     right: 140px;
+    padding: 0px 15px 0px 15px;
 }
 
 header a
@@ -98,7 +101,7 @@ header a:hover
 {
     color: #0065FC;
     border-top: 1px solid #0065FC; 
-    padding: 60px 20px 0px 20px;
+    padding-top: 60px;
 }
 
 .sub-mobile 
