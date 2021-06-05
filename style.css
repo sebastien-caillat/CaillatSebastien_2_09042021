@@ -137,6 +137,12 @@ header a:hover
 
 @media all and (max-width: 480px)
 {
+    header strong
+    {
+        position: relative;
+        left: 40px;
+    }
+
     header ul
     {
         position: relative;
@@ -422,6 +428,7 @@ input
     align-items: baseline;
     position: relative;
     bottom: 10px;
+    z-index: 1;
 }
 
 .tooltip
@@ -451,9 +458,9 @@ input
     }
     .tooltip-block
     {
-        position: absolute;
-        bottom: 450px;
-        margin-top: -190px;
+        position: relative;
+        bottom: 140px;
+        margin-top: -50px;
     }
 }
 
@@ -476,7 +483,7 @@ input
         white-space: nowrap;
         margin-top: 0px;
         position: relative;
-        bottom: 120px; 
+        bottom: 120px;
     }
 
     .tooltip-block p 
