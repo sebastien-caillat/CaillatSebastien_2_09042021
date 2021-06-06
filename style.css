@@ -47,12 +47,21 @@ ul
     color: #F2F2F2;
 }
 
+/* General Responsive */
+
+@media all and (max-width: 768px)
+{
+    .container
+    {
+        width: auto;
+    }
+}
+
 @media all and (max-width: 480px)
 {
     .container
     {
-        width: 320px;
-        max-width: 480px;
+        width: auto;
     }
 }
 
@@ -67,16 +76,15 @@ header ul
 {
     display: flex;  
     float: right;
-    padding: 60px 0px 0px 0px;  
+    padding: 60px 0px 0px 0px;
 }
 
 header li
 {
-    margin-left: 50px; 
     text-align: right;
     position: relative;
-    right: 140px;
-    padding: 0px 14px 0px 14px;
+    right: 120px;
+    padding: 0px 25px 0px 25px;
 }
 
 header a
@@ -89,12 +97,12 @@ header strong
 {
     font-weight: bold;
     color: #0065FC;
-    margin-right: 4px;
 }
 
 header img
 {
     padding: 45px 0px 0px 0px;
+    margin-right: 30px;
 }
 
 header a:hover
@@ -106,8 +114,9 @@ header a:hover
 
 .sub-mobile 
 {
+    display: flex;
+    justify-content: right;
     position: relative;
-    left: 1110px;
     bottom: 50px;
 }
 
@@ -124,12 +133,7 @@ header a:hover
     header ul 
     {
         position: relative;
-        right: 430px;
-    }
-
-    .sub-mobile
-    {
-        left: 680px;
+        left: 40px;
     }
 }
 
@@ -137,16 +141,10 @@ header a:hover
 
 @media all and (max-width: 480px)
 {
-    header strong
-    {
-        position: relative;
-        left: 40px;
-    }
-
     header ul
     {
         position: relative;
-        right: 120px;
+        left: -165px;
     }
 
     header li 
@@ -154,8 +152,8 @@ header a:hover
         width: 100%;
         border-bottom: 5px solid #F2F2F2;
         padding-bottom: 15px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
    .sub-mobile
@@ -164,19 +162,19 @@ header a:hover
     justify-content: flex-end;
     position: relative;
     bottom: 50px;
-    left: 290px;
+    left: 360px;
    }
 
    .hos 
    {
         position: relative;
-        left: 250px;
+        left: 210px;
    }
 
    .act
    {
        position:relative;
-       left: 165px;
+       left: 200px;
    }
 
    header a:hover
@@ -267,8 +265,7 @@ input
         visibility: visible;
         color: #FFFFFF;
         position: relative;
-        left: 253px;
-        bottom: 37px;
+        right: 56px;
     }
 }
 
@@ -380,7 +377,8 @@ input
     {
         flex-direction: column;
         position: relative;
-        right: 30px;
+        right: 65px;
+        top: 10px
     }
     
     .filters :nth-child(3)
@@ -642,8 +640,9 @@ input
 {
     #section-hosting
     {
+        width: 1200px;
         position: relative;
-        right: 18px;
+        right: 18px;  
     }
 
     #section-hosting-most_popular
@@ -686,6 +685,57 @@ input
 
 }
 
+@media all and (max-width: 700px)
+{
+    #section-hosting-marseille
+    {
+        height: 850px;
+        z-index: 1;
+    }
+
+    #section-hosting-most_popular 
+    {
+        height: 850px;
+        flex-direction: column;
+        margin-top: 130px;
+    }
+
+    #section-hosting-most_popular h1 
+    {
+        position: relative;
+        left: -10px;
+        bottom: -80px;
+    }
+
+    .host-line-1
+    {
+        flex-direction: column;
+    }
+
+    .host-line-2 
+    {
+        flex-direction: column;
+        position: relative;
+        left: 250px;
+        bottom: 695px;
+    }
+
+    .most_popular
+    {
+        left: 10px;
+    }
+
+    .tab-move
+    {
+        top: 100px;
+    }
+
+    .read-more
+    {
+        top: -680px;
+    }
+}
+
     /* Section Hosting Mobile Responsive */
 
 @media all and (max-width: 480px)
@@ -703,7 +753,7 @@ input
         margin-top: -110px;
         position: relative;
         top: 0px;
-        right: 28px;
+        right: 10px;
         bottom: 60px;
         border-radius: 0px;
         background-color: #F2F2F2;
@@ -713,6 +763,7 @@ input
     {
         position:relative;
         left: -10px;
+        bottom: 0px;
     }
     
     #section-hosting-marseille
@@ -720,6 +771,8 @@ input
         background-color: #FFFFFF;
         position: relative;
         bottom: 50px;
+        left: 20px;
+        height: 650px;
     }
     
     .host-line-1
@@ -730,6 +783,8 @@ input
     .host-line-2
     {
         flex-direction: column;
+        left: 0px;
+        bottom: 0px;
     }
     
     .most_popular
@@ -739,6 +794,7 @@ input
         left: 8px;
         top: 0px;
         right: 0px;
+        bottom: 0px;
         margin-top: 0px;
     }
 
@@ -766,6 +822,7 @@ input
     {
         position: relative;
         right: 15px;
+        top: 0px;
     }
 
     .fa-chart-line
@@ -875,6 +932,7 @@ input
     #section-activities 
     {
         margin-top: -350px;
+        height: 1000px;
     }
 
     #section-activities h1 
@@ -919,25 +977,83 @@ input
     .activities-1
     {
         position: relative;
-        bottom: 210px;
+        bottom: 172px;
     }
 
     .activities-2 
     {
         position: relative;
-        right: 15px;
+        left: 0px;
+        top: 250px;
     }
 
     .activities-3 
     {
         position: relative;
-        right: 545px;
+        left: 240px;
+        bottom: 555px;
     }
 
     .activities-4
     {
         position: relative;
-        right: 305px;
+        bottom: 130px;
+        right: 300px;
+    }    
+}
+
+@media all and (max-width: 750px)
+{
+    .activities-1
+    {
+        display: block;
+        top: 1px;
+    }
+    .activities-2
+    {
+        display: block;
+        flex-direction: column;
+        left: 270px;
+        top: 30px;
+
+    }
+
+    .activities-4
+    {
+        display: block;
+        flex-direction: column;
+        left: 2px;
+        top: -525px;
+    }
+}
+
+@media all and (max-width: 700px)
+{
+    #section-activities 
+    {
+        margin-top: -500px;
+    }
+
+    .activities-1
+    {
+        top:-3px;
+    }
+
+    .activities-2
+    {
+        left: 1px;
+        top: 35px;
+    }
+
+    .activities-3
+    {
+        top: -555px;
+    }
+
+    .activities-4
+    {
+        bottom: 520px;
+        left: 260px;
     }
 }
 
@@ -947,9 +1063,11 @@ input
 {
     #section-activities
     {
+        height: 1300px;
         margin-top: 920px;
         position: relative;
         bottom: 150px;
+        left: 20px;
     }
 
     #section-activities h1 
@@ -1001,23 +1119,30 @@ input
     {
         margin-bottom: 20px;
         bottom: 0px;
+        top: 0px;
     }
 
     .activities-2
     {
         margin: 20px 0px 20px 0px;
         right: 0px;
+        top: 0px;
     }
 
     .activities-3
     {
         margin: 20px 0px 20px 0px;
-        right: 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
     }
 
     .activities-4
     {
         margin: 20px 0px 20px 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
         right: 0px;
     }
 }
@@ -1054,7 +1179,8 @@ footer li
     {
         position: relative;
         right: 12px;
-        height: 300px;
+        height: 450px;
+        margin-top: -350px;
     }
 
     .footer-infos 
@@ -1072,6 +1198,14 @@ footer li
     .footer-infos :nth-child(2)
     {
         margin-right: 30px;
+    }
+}
+
+@media all and (max-width: 700px)
+{
+    .footer-infos
+    {
+        flex-direction: column;
     }
 }
 
