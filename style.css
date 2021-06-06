@@ -5,6 +5,7 @@ body
     background-color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    width: auto;
 }
 
 .container
@@ -49,6 +50,14 @@ ul
 
 /* General Responsive */
 
+@media all and (max-width: 1199px)
+{
+    .container
+    {
+        width: auto;
+    }
+}
+
 @media all and (max-width: 768px)
 {
     .container
@@ -74,7 +83,8 @@ header
 
 header ul
 {
-    display: flex;  
+    display: flex;
+    justify-content: flex-end;
     float: right;
     padding: 60px 0px 0px 0px;
 }
@@ -115,9 +125,9 @@ header a:hover
 .sub-mobile 
 {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     position: relative;
-    bottom: 50px;
+    bottom: 48px;
 }
 
 .sub-mobile a:hover
@@ -501,6 +511,7 @@ input
 #section-hosting
 {
     display: flex;
+    width: auto;
 }
 
 #section-hosting h1
@@ -515,7 +526,8 @@ input
     border-radius: 20px;
     width: 70%;
     margin-right: 30px;
-    height: 650px;
+    height: auto;
+    width: 950px;
 }
 
 #section-hosting-marseille h1, .read-more
@@ -649,8 +661,8 @@ input
     {
         height: 470px;
         position: relative;
-        top: 670px;
-        right: 820px;
+        top: -120px;
+        right: 20px;
         margin-bottom: 1000px;
         background-color: #FFFFFF;
         flex-direction: row;
@@ -659,16 +671,16 @@ input
     #section-hosting-most_popular h1 
     {
         position: relative;
-        left: 25px;
+        left: 10px;
+        top: 90px;
         white-space: nowrap
     }
 
     .most_popular 
     {
         position: relative;
-        top: 100px;
-        right: 215px;
-        margin-top: -10px;
+        top: 120px;
+        right: 220px;
     }
 
     .fa-chart-line 
@@ -679,32 +691,39 @@ input
     .tab-move 
     {
         position: relative;
-        top: 280px;
         right: 915px;
     }
 
 }
 
-@media all and (max-width: 700px)
+@media all and (max-width: 1199px)
 {
+    #section-hosting
+    {
+        display: flex;
+        flex-direction: column;
+    }
     #section-hosting-marseille
     {
+        display: block;
+        width: 550px;
         height: 850px;
-        z-index: 1;
     }
 
     #section-hosting-most_popular 
     {
-        height: 850px;
+        justify-content: right;
+        height: 650px;
         flex-direction: column;
-        margin-top: 130px;
+        margin-top: 130px; 
+        /* margin-bottom: 20px;    */
+        right: 20px; 
     }
 
     #section-hosting-most_popular h1 
     {
         position: relative;
         left: -10px;
-        bottom: -80px;
     }
 
     .host-line-1
@@ -835,7 +854,6 @@ input
 
 #section-activities
 {
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -931,7 +949,7 @@ input
 {
     #section-activities 
     {
-        margin-top: -350px;
+        margin-top: -1000px;
         height: 1000px;
     }
 
@@ -978,36 +996,39 @@ input
     {
         position: relative;
         bottom: 172px;
+        margin-bottom: 0px;
     }
 
     .activities-2 
     {
         position: relative;
         left: 0px;
-        top: 250px;
+        top: 200px;
     }
 
     .activities-3 
     {
         position: relative;
         left: 240px;
-        bottom: 555px;
+        bottom: 585px;
     }
 
     .activities-4
     {
         position: relative;
-        bottom: 130px;
+        bottom: 250px;
         right: 300px;
+        top: -550px;
     }    
 }
 
-@media all and (max-width: 750px)
+@media all and (max-width: 1199px)
 {
     .activities-1
     {
         display: block;
         top: 1px;
+        margin-bottom: 15px;
     }
     .activities-2
     {
@@ -1015,15 +1036,22 @@ input
         flex-direction: column;
         left: 270px;
         top: 30px;
+    }
 
+    .activities-3
+    {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        position: relative;
+        right: 25px;
     }
 
     .activities-4
     {
         display: block;
         flex-direction: column;
+        position: relative;
         left: 2px;
-        top: -525px;
     }
 }
 
@@ -1031,29 +1059,35 @@ input
 {
     #section-activities 
     {
-        margin-top: -500px;
+        margin-top: -1000px;
     }
 
     .activities-1
     {
         top:-3px;
+        margin-bottom: 0px;
     }
 
     .activities-2
     {
         left: 1px;
         top: 35px;
+        margin: 0px;
     }
 
     .activities-3
     {
         top: -555px;
+        right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .activities-4
     {
         bottom: 520px;
         left: 260px;
+        margin: 0px;
     }
 }
 
